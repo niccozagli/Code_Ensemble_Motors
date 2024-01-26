@@ -1,4 +1,4 @@
-function [f_grid,pdf] = Exact_Integral(x,y,yMF,zMF,SigmaFluct,N,f0,f_grid)
+function pdf = Exact_Integral(x,y,yMF,zMF,SigmaFluct,N,f0,f_grid)
     nyMF = N * yMF; nzMF = N *zMF;
     Sigma = N*SigmaFluct;
     [q1,q2] = meshgrid(x,y);
